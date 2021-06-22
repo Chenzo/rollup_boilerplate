@@ -1,0 +1,21 @@
+{
+  "name": "rollup_boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "start": "node server-js.js",
+    "build": "rollup --config",
+    "watch": "rollup --config --watch",
+    "sass": "node-sass --source-map true --watch src/scss -o www/css --recursive  --output-style compressed"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.0",
+    "rollup": "^2.52.2"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0"
+  }
+}
