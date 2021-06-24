@@ -3,12 +3,7 @@
     factory();
 }((function () { 'use strict';
 
-    const dotenv = require('dotenv');
-    dotenv.config();
-
-    console.log("Setting All Local .env vars");
-
-    (() => {
+    const codeModule = (() => {
 
 
         const init = function() {
@@ -23,18 +18,7 @@
         };
     })();
 
-    console.log("Murray Bot - Server - Modules Imported");
-
-    const debugMode = process.env.DEBUG;
-    if (debugMode) {
-        console.log("*** --- Debug: " + debugMode);
-    }
-
-
-    expressModule.initalizeServer();
-    databaseModule.initalizeDatabase();
-    ioModule.initializeSocket(expressModule.getHTTP());
-    discordModule.initalizeBot();
-    twitchModule.initalizeBot();
+    codeModule.init();
 
 })));
+//# sourceMappingURL=scripts.js.map
