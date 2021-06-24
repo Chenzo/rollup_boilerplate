@@ -1,4 +1,4 @@
-Murray Bot
+Rollup Boilerplate
 ====================  
 http://localhost:3002/
 
